@@ -1,0 +1,59 @@
+.text
+{
+    font-size: large;
+}
+.a
+{
+    color: black;
+}
+body 
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 1em;
+    padding: 0px;
+    background-color:cadetblue;
+}
+#wrapper
+{
+    width: 1000px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: center;
+}
+
+h1, h2, h3, h4
+{
+    font-style: italic;
+    letter-spacing: 0.4em;
+}
+h1
+{
+    font-size: 1.5em;
+}
+.menu {
+    color: cadetblue;
+}
+h2
+{
+    font-size: 1.2em;
+}
+a:visited
+{ 
+    color:cornflowerblue;
+   text-decoration: underline;
+}
+a:hover
+{ 
+    color:blue;
+    text-decoration: underline;
+}
+a
+{
+    color: gray;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
