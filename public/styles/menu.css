@@ -1,0 +1,104 @@
+body 
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 1em;
+    padding: 0px;
+    background-color:cadetblue;    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+h1, h2, h3, h4
+{
+    font-style: italic;
+    letter-spacing: 0.4em;
+}
+
+header{
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(5, 46, 5);
+    height: 70px;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav ul li {
+    list-style: none;
+    width: 300px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(171, 196, 171);
+}
+
+article {
+    margin-left: 50px;
+    text-align: center;
+}
+
+article h2 {
+    margin-left: -50px;
+    margin-top: 5%;
+    font-size: 2.3em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(188, 212, 188);
+}
+
+article h4 {
+    font-size: 2em;
+}
+
+article p{
+    font-size: 1.5em;
+}
+
+aside {
+    text-align: center;
+}
+
+aside h2 {
+    font-size: 2.3em;
+    padding-top: 30px;
+}
+
+aside p {
+    font-size: 1.5em;
+}
+
+aside a:last-of-type {
+    padding-top: 50px;
+    color: rgb(0, 95, 30);
+    text-decoration: none;
+}
+
+
+
+
+
+footer {
+    background-color: black;
+    height: 60px;
+}
+
+footer p {
+    color: white;
+    padding-top: 17px;
+    padding-left: 20px;
+    font-size: 1.4em;
+}

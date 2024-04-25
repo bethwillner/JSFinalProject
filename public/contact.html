@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title> *Name of food truck* </title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contactstyle.css">
 </head>
 <body>
     <div id="wrapper">
         <header>
-            <img src="" alt="" height="380" width="459">
-            <h1> *Food truck name* </h1>
-                    <nav> 
-                        <hr>
-                        <a href="home.html">Home</a> |
-                        <a href="menu.html"> Menu </a> |
-                        <a href="contact.html"> Contact Us </a> |
-                        <a href="admin.html"> Owner Rights </a> 
-                        <hr>
-                    </nav>
-              
+            <header>
+                <img src="img/Nourish.png" width="300px">
+                        <nav> 
+                            <hr>
+                            <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="menu.html"> Menu </a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="admin.html">Owner Rights</a></li>
+                            </ul>
+                            <hr>
+                        </nav>
+            </header>
         </header>
 <main>
     <section>
-        <h2> Contact Us: </h2>
+        
+        <img src="img/Untitled design.png" width="400">
+        <h1>Contact Us</h1>
+        <p>For any information for scheduling events or anythign business, ingredient, or menu related please contact us by email of fill out the form below!</p>
+        <img src="img/email.png" width="50px">
+        <h4>nourishfoodtrucks@gmail.com</h4>
+    </section>
+    <br>
+    <br>
+    <section>
+        <h2> Contact Form: </h2>
     </section>
     <section>
         <form method="post" action="contact.html">
@@ -33,22 +45,32 @@
                 <fieldset>
                     <legend> Personal Information </legend>
                     <p> <label for="fname"> First Name: </label>
+                        <br>
+                        <br>
                         <input type="text" name="fname" id="fname" required>*
                     </p>
                     <p>
                         <label for="lname"> Last Name: </label>
+                        <br>
+                        <br>
                         <input type="text" name="lname" id="lname" required>*
                     </p> 
                     <p>
                         <label for="address"> Street Address: </label>
+                        <br>
+                        <br>
                         <input type="text" name="address" id="address">
                     </p> 
                     <p>
                         <label for="state"> State: </label>
+                        <br>
+                        <br>
                         <input type="text" name="state" id="state">
                     </p> 
                     <p> 
                         <label for="zip"> Zip Code: </label>
+                        <br>
+                        <br>
                         <input type="number" name="zip" id="zip">
                     </p>
                 </fieldset>
@@ -56,45 +78,30 @@
                 <fieldset>
                     <legend> Professional Information </legend>
                     <p> <label for="employee"> Employee Number: </label>
+                        <br>
+                        <br>
                         <input type="number" name="employee" id="employee">
                     </p>
-                    <p> Payment Preference: </p>
-                      
-                        <input type="radio" name="payment" id="direct" value="direct">
-                        <label for="direct"> Direct Deposit </label>
-                       
-                        <input type="radio" name="payment" id="paycheck" value="paycheck">
-                        <label for="paycheck"> Paycheck </label>
-                        
-                        <input type="radio" name="payment" id="cash" value="cash">
-                        <label for="cash"> Cash </label>
-                       
+                    <p> Payment Preference:* </p>
+                        <select required>
+                            <option> </option>
+                            <option name="payment" id="direct" value="direct">Direct Deposit</option>
+                            <option name="payment" id="paycheck" value="paycheck">Paycheck</option>
+                            <option name="payment" id="cash" value="cash">Cash</option>
+                        </select>
                         <p> Method of Contact: </p>
-                      
-                        <input type="checkbox" name="contact" id="ll" value="ll">
-                        <label for="ll"> Land Line </label>
-                       
-                        <input type="checkbox" name="contact" id="cp" value="cp">
-                        <label for="pc"> Cell Phone </label>
-                        
-                        <input type="checkbox" name="contact" id="email" value="email">
-                        <label for="email"> Email </label>
 
-                        <p> <label for="em"> Email Address: </label>
-                            <input type="email" name="em" id="em">
-                        </p>
-
-                        <p>
-                            <label for="favcolor"> What's your favorite color?</label>
-                            <input type="color" id="favcolor" name="favcolor">
-                        </p>
+                        <select required>
+                            <option> </option>
+                            <option name="homephone" id="homephone" value="homephone">Home</option>
+                            <option name="mobile" id="mobile" value="mobile">Mobile</option>
+                            <option name="email" id="email" value="email">Email</option>
+                        </select>
+                        <br>
                 </fieldset>
                 <br>
-                <input type="submit" value="Submit Your Form">
+                <input class="submit" type="submit" value="Submit Your Form">
         </form>
-    </section>
-    <section>
-        <p> This is text about when we will get back to the user once we review the information they submitted. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat obcaecati cum ex corporis eveniet rem, quidem laborum fuga. Eligendi itaque iure quam commodi dolorum maxime, eum aliquid voluptatem nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab beatae neque qui dolores dolore reiciendis sit quisquam, modi distinctio. Quidem esse sequi molestiae numquam nisi. Quam quidem fugit sunt ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit libero obcaecati optio ex dicta quibusdam nobis possimus maxime repellat natus dolorum laborum dolorem, consequatur at? Perferendis dolores error sunt voluptas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quasi fuga neque vel cupiditate voluptatem odit placeat fugit quisquam nam excepturi reiciendis omnis amet facilis cumque alias, id expedita optio?</p>
     </section>
     <footer> 
         <div id="footer">

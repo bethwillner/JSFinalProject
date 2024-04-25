@@ -1,0 +1,159 @@
+.text
+{
+    font-size: large;
+}
+.a
+{
+    color: black;
+}
+body 
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 1em;
+    padding: 0px;
+    background-color:cadetblue;    
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+h1, h2, h3, h4
+{
+    font-style: italic;
+    letter-spacing: 0.4em;
+}
+
+header{
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(5, 46, 5);
+    height: 70px;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav ul li {
+    list-style: none;
+    width: 300px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(171, 196, 171);
+}
+
+section {
+    padding-top: 5%;
+    text-align: center;
+    background-color: rgb(219, 227, 219);
+    height: 300px;
+    margin-bottom: -100px;
+}
+
+section h2 {
+    font-size: 2em;
+}
+
+section p {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+article {
+    padding-top: 10px;
+}
+
+article h2, article p{
+    color: white;
+}
+
+article h2 {
+    background-image: url('bannertomato2.jpg');
+    padding-top: 100px;
+    height: 150px;
+    font-size: 4em;
+    text-align: center;
+}
+
+article p {
+    background-color: black;
+    font-size: 1.4em;
+    text-align: center;
+    height: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    line-height: 1.8em;
+    margin-top: -50px;
+    padding-bottom: 30px;
+}
+
+aside {
+    padding: 40px;
+    width: 1050px;
+}
+
+aside h2 {
+    font-size: 3em;
+}
+
+aside li a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: rgb(5, 78, 5);
+}
+
+aside li {
+    list-style-type: none;
+}
+
+aside li {
+    padding: 10px;
+}
+
+aside ul:first-of-type li {
+    padding: 20px;
+}
+
+
+aside li a:hover .hidden{
+   display: block;
+}
+
+aside li ul li {
+    font-size: 1.2em;
+}
+
+aside a:last-of-type {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    background-color: black;
+    height: 60px;
+}
+
+footer p {
+    color: white;
+    padding-top: 17px;
+    padding-left: 20px;
+    font-size: 1.4em;
+}
+
+
+
