@@ -105,6 +105,7 @@ article p {
 aside {
     padding: 40px;
     width: 1050px;
+    padding-left: 150px;
 }
 
 aside h2 {

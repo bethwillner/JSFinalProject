@@ -37,7 +37,7 @@ const port = process.env.PORT || 3001
 
 app.use(express.json())
 app.use(express.static('public'))
-app.use('/api', require('./db'));
+app.use('/api', require('./foodtruckdb'));
 
 
 app.get('/', (_, response) => {

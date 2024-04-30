@@ -24,11 +24,45 @@ const getCollection = async (dbName, collectionName) => {
     return client.db(dbName).collection(collectionName)
 }
 
-router.get('/api/menu', async (_, response) => {
+router.get('/menu', async (_, response) => {
     const collection = await getCollection('Final-API', 'menu');
     const menu = await collection.find().toArray();
     response.json(menu)
 })
+
+router.post('/menu', async (request, response) => {
+
+})
+
+router.put('/menu/:id', async (request, response) => {
+
+})
+
+router.delete('/menu/:id', async (request, response) => {
+
+})
+
+router.get('/events', async (request, response) => {
+
+})
+
+router.get('/events/:id', async (request, response) => {
+
+})
+
+router.post('/events', async (request, response) => {
+
+})
+
+router.put('/events/:id', async (request, response) => {
+
+})
+
+router.delete('/events/:id', async (request, response) => {
+
+})
+
+
 
 
 
