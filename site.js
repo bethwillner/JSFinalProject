@@ -2,6 +2,8 @@
 const path = require('path')
 
 const { getCollection, ObjectId } = require('./db')
+const express = require('express')
+const path = require('path')
 
 
 const app = express();
@@ -15,12 +17,6 @@ app.use(express.static('public'));
 
 app.get('/', (request, response) => {
     response.sendFile('/home.html', {root});
-})
-
-app.get('/api/menu', async (_, response) => {
-    const collection = await getCollection('Final-API', 'menu');
-    const menu = await collection.find().toArray();
-    response.json(menu)
 })
 
 
