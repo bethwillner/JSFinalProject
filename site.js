@@ -16,3 +16,4 @@ const root = path.join(__dirname, 'public');
 
 app.use(express.json());
 app.use(express.static('public'));
+
