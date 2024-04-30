@@ -34,30 +34,39 @@ router.post('/menu', async (request, response) => {
 
 })
 
+//C
 router.put('/menu/:id', async (request, response) => {
 
 })
 
+//B
 router.delete('/menu/:id', async (request, response) => {
 
 })
 
+
+//C
 router.get('/events', async (request, response) => {
 
 })
 
+
+//B
 router.get('/events/:id', async (request, response) => {
 
 })
 
+//C
 router.post('/events', async (request, response) => {
 
 })
 
+//B
 router.put('/events/:id', async (request, response) => {
 
 })
 
+//C
 router.delete('/events/:id', async (request, response) => {
 
 })
