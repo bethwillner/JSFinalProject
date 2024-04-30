@@ -16,8 +16,6 @@ app.use(express.json());
 app.use(express.static('public'));
 
 
-
-
 app.get('/', (request, response) => {
     response.sendFile('/home.html', {root});
 })
@@ -30,12 +28,6 @@ app.get('/api/menu', async (_, response) => {
 
 
 app.listen(port, () => console.log(`Server is running http://localhost:${port}`))
-app.use(express.json())
-app.use(express.static('public'))
 
 
-app.get('/api/menu', (request, response)=> {
-    const collection = getCollection('Final-API', 'menu')
-    const menu = collection.find().toArray()
-    response.json(menu)
-})
+
