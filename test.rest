@@ -2,6 +2,36 @@
 
 @url = http://localhost:3001
 
+@id = 66325c4d4da98a79c824ecf5
+
 GET {{url}}/api/menu
 
 
+
+### update menu 
+PUT {{url}}/api/menu/{{id}}
+Content-Type: application/json
+
+{
+    "name": "Loaded Yogurt Parfait",
+    "description": "Greek yogurt, granola, honey, and fresh berries",
+    "price": "4.99"
+}
+
+
+### get events with id and name 
+GET {{url}}/api/events
+
+### add an event 
+POST {{url}}/api/events
+Content-Type: application/json
+
+{
+    "name": "Lollapalooza Music Festival",
+    "location": "Grant Park, Chicago, IL",
+    "hours": "8:00AM - 11:00PM",
+    "dates": "08/01/2024 - 08/10/2024"
+}
+
+### delete an event
+DELETE {{url}}/api/events/{{id}}
