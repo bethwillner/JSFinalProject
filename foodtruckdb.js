@@ -25,7 +25,10 @@ router.get('/menu', async (_, response) => {
 
 //B
 router.post('/menu', async (request, response) => {
-
+    const { name, description, price } = request.body;
+    const collection = await getCollection('Final-API', 'menu');
+    const newItem = await collection.insertOne({name, description, price});
+    response.json(newItem);
 })
 
 //C-update menu item
@@ -42,7 +45,11 @@ router.put('/menu/:id', async (request, response) => {
 
 //B
 router.delete('/menu/:id', async (request, response) => {
-
+    const {id} = request.params;
+    const collection = await getCollection('Final-API', 'menu')
+    await collection.deleteOne({ _id: new ObjectId(id) })
+    const message = "Successfully Deleted!"
+    response.send(message);
 })
 
 
@@ -61,7 +68,10 @@ router.get('/events', async (request, response) => {
 
 //B
 router.get('/events/:id', async (request, response) => {
-
+    const {id} = request.params;
+    const collection = await getCollection('Final-API', 'events');
+    const event = await collection.findOne({"_id": new ObjectId(id)})
+    response.json(event);
 })
 
 //C-add new event 
@@ -77,7 +87,14 @@ router.post('/events', async (request, response) => {
 
 //B
 router.put('/events/:id', async (request, response) => {
+    const {body, params} = request
+    const {id} = params;
+    const {name, location, hours, dates} = body
+    const event = {name, location, hours, dates}
 
+    const collection = await getCollection('Final-API', 'events')
+    const Updatedevent = await collection.updateOne({_id: new ObjectId(id)}, {$set: event})
+    response.json(Updatedevent);
 })
 
 //C-delete an event 

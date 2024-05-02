@@ -2,10 +2,26 @@
 
 @url = http://localhost:3001
 
-@id = 6630e8f5e192154126c832ed
+@id = 66325c4d4da98a79c824ecf5
 
+##get menu
 GET {{url}}/api/menu
 
+##Get Events by ID
+GET {{url}}/api/events/{{id}}
+
+
+
+
+###Add new Menu Item
+POST {{url}}/api/menu
+Content-Type: application/json
+
+{
+    "name": "Loaded Potato",
+    "description": "A baked potato loaded with fresh cheese, homeade sour cream, and topped with fresh and warm bacon bits",
+    "price": "8.99"
+}
 
 
 ### update menu 
@@ -13,14 +29,22 @@ PUT {{url}}/api/menu/{{id}}
 Content-Type: application/json
 
 {
-    "name": "Ultimate Yogurt Parfait",
+    "name": "Loaded Yogurt Parfait",
     "description": "Greek yogurt, granola, honey, and fresh berries",
     "price": "4.99"
 }
 
 
+
+###Delete menu item
+DELETE {{url}}/api/menu/{{id}}
+
+
+
 ### get events with id and name 
 GET {{url}}/api/events
+
+
 
 ### add an event 
 POST {{url}}/api/events
@@ -33,5 +57,18 @@ Content-Type: application/json
     "dates": "08/01/2024 - 08/10/2024"
 }
 
+### Update events
+PUT {{url}}/api/events/{{id}}
+Content-Type: application/json
+
+{
+    "name": "Easter Music Festival",
+    "location": "Door County, WI",
+    "hours": "8:00AM - 11:00PM",
+    "dates": "03/29/2024 - 04/09/2024"
+}
+
+
 ### delete an event
 DELETE {{url}}/api/events/{{id}}
+
