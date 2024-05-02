@@ -1,26 +1,3 @@
-/*const express = require('express');
-const path = require('path')
-
-const { getCollection, ObjectId } = require('./db')
-const express = require('express')
-const path = require('path')
-
-
-const app = express();
-const port = process.env.PORT || 3001
-
-const root = path.join(__dirname, 'public')
-
-app.use(express.json());
-app.use(express.static('public'));
-
-
-app.get('/', (request, response) => {
-    response.sendFile('/home.html', {root});
-})
-
-
-app.listen(port, () => console.log(`Server is running http://localhost:${port}`))*/
 
 
 const express = require('express')
@@ -38,6 +15,18 @@ app.use('/api', require('./foodtruckdb'));
 
 app.get('/', (_, response) => {
 	response.sendFile('home.html', { root })
+})
+
+app.get('/menu', (_, response) => {
+	response.sendFile('menu.html', { root })
+})
+
+app.get('/contact', (_, response) => {
+	response.sendFile('contact.html', { root })
+})
+
+app.get('/menu', (_, response) => {
+	response.sendFile('menu.html', { root })
 })
 
 

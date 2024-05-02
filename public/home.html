@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Nourish </title>
     <link rel="stylesheet" href="styles/homestyle.css">
-    <script src="site.js" defer></script>
 </head>
 <body>
     <div id="wrapper">
@@ -33,7 +32,7 @@
     <aside> 
         <h2> Our Events </h2>
         <ul>
-            <li><a href="#events">Coachella - Largest Spring Music Festival</a>
+            <li><a href="#events" class="collapse" >Coachella - Largest Spring Music Festival</a>
                 <ul class="hidden">
                     <li class="description">Come see your favorite performing artists in one place and in one weekend! Variety of performers such in all kinds of music genres such as country, pop, fold, indie, and rock! Ten different stages all with top performing artists from around the world performing in one weekend, you don't want to miss it! </li>
                     <li>Location: Madison, WI</li>
@@ -41,7 +40,7 @@
                     <li>Hours: 8:00AM - 8:00PM</li>
                 </ul>
             </li>
-            <li><a href="#events">Easter Festival - Celebration of Easter</a>
+            <li><a href="#events" class="collapse">Easter Festival - Celebration of Easter</a>
                 <ul class="hidden">
                     <li class="description2">A celebration of spring and the holiday of Easter is coming this weekend in Door County. It's offically time to start welcoming in spring and enjoying the weather outside with local music artists and local food vendors in Door County. Door County is full of beautiful destinations that attract millions of people every year. We are excited to host the Easter festival this year. </li>
                     <li>Location: Door County, WI</li>
@@ -49,7 +48,7 @@
                     <li>Hours: 8:00AM - 8:00PM</li>
                 </ul>
             </li>
-            <li><a href="#events">Craft Fair - Local crafts and Goods</a>
+            <li><a href="#events" class="collapse">Craft Fair - Local crafts and Goods</a>
                 <ul class="hidden">
                     <li class="description3">Craft fair is coming back to downtown Green Bay, WI! Top craft vendors from around Wisconsin will be there to showcase their best work. You can find amazing food while strolling the streets of downtown Green Bay for a beautiful time to celebrate summer. Located by the bay, the craft fair has so much to offer in great crafts, food, and views.</li>
                     <li>Location: Green Bay, WI</li>
@@ -57,7 +56,7 @@
                     <li>Hours: 8:00AM - 8:00PM</li>
                 </ul>
             </li>
-            <li><a href="#events">Summerfest - Wisconsin's Biggest Music Event</a>
+            <li><a href="#events" class="collapse">Summerfest - Wisconsin's Biggest Music Event</a>
                 <ul class="hidden">
                     <li class="description4">Top music artists from around the globe are coming to Wisconsin! Every weekend through June and July are filled with headlining music artists and food vendors. It's a time like no other to see your favorite artists in Wisconsin all at the same event! Millions of people from around Wisconsin and the globe come to see Summerfest and we can't wait to see you!</li>
                     <li>Location: Milwuakee, WI</li>
@@ -65,7 +64,7 @@
                     <li>Hours: 8:00AM - 8:00PM</li>
                 </ul>
             </li>
-            <li><a href="#events">Mile of Music - Local Artists and Local Food Festival</a>
+            <li><a href="#events" class="collapse">Mile of Music - Local Artists and Local Food Festival</a>
                 <ul class="hidden">
                     <li class="description5">The annual event of Mile of Music is excited to see you in 2024! Headlining artists from across Wisconsin are here to perform along with delicious local food from vendors and the streets of downtown. Mile of music is a celebration of artists and their musicality as there are over 200 performances during the festival. </li>
                     <li>Location: Appleton, WI</li>
@@ -73,7 +72,7 @@
                     <li>Hours: 8:00AM - 8:00PM</li>
                 </ul>
             </li>
-            <li><a href="#events">Octoberfest - Celebration of Fall with Local Vendors and Crafts</a>
+            <li><a href="#events" class="collapse">Octoberfest - Celebration of Fall with Local Vendors and Crafts</a>
                 <ul class="hidden">
                     <li class="description6">Ready to celebrate the coming of fall with Octoberfest? So are we! We host an endless variety of local goods, crafts, and food for everyone to enjoy in Door County. Not to mention the beautiful fall colors of Wisconsin will be shining bright during the festivities. Door County is filled with popular tourist destinations and beautiful sights of nature. Come spend a weekend with us in beautiful Door County this fall for Octoberfest!</li>
                     <li>Location: Door County, WI</li>
@@ -84,8 +83,24 @@
         </ul>
         <br>
         <br>
+        <script>
+            var coll = document.getElementsByClassName("collapse");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+}
+        </script>
         <hr>
-           <a href="#top"> Back to top of page!</a> 
+           <a class="last" href="#top"> Back to top of page!</a> 
             <br>
     </aside> 
     <footer> 

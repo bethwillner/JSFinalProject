@@ -105,6 +105,7 @@ article p {
 aside {
     padding: 40px;
     width: 1050px;
+    padding-left: 10%;
 }
 
 aside h2 {
@@ -114,7 +115,7 @@ aside h2 {
 aside li a {
     font-size: 1.5em;
     text-decoration: none;
-    color: rgb(5, 78, 5);
+    color: rgb(93, 128, 93);
 }
 
 aside li {
@@ -129,18 +130,24 @@ aside ul:first-of-type li {
     padding: 20px;
 }
 
-
-aside li a:hover .hidden{
-   display: block;
-}
-
 aside li ul li {
     font-size: 1.2em;
 }
 
 aside a:last-of-type {
+    text-decoration: none;
+}
+
+.last{
     color: black;
     text-decoration: none;
+}
+
+.hidden {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 footer {
@@ -154,6 +161,8 @@ footer p {
     padding-left: 20px;
     font-size: 1.4em;
 }
+
+
 
 
 
