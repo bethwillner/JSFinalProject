@@ -4,13 +4,13 @@
 
 @id = 6630ec97e192154126c832f5
 
-
+##get menu
+GET {{url}}/api/menu
 
 ##Get Events by ID
 GET {{url}}/api/events/{{id}}
 
-##get menu
-GET {{url}}/api/menu
+
 
 
 ###Add new Menu Item
@@ -25,7 +25,7 @@ Content-Type: application/json
 
 
 ### update menu 
-PUT {{url}}/api/menu/6630e8f5e192154126c832ed
+PUT {{url}}/api/menu/{{id}}
 Content-Type: application/json
 
 {
@@ -37,7 +37,7 @@ Content-Type: application/json
 
 
 ###Delete menu item
-DELETE {{url}}/api/menu/6633da094add570e1d0c2ab3
+DELETE {{url}}/api/menu/{{id}}
 
 
 
