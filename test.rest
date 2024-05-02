@@ -2,7 +2,7 @@
 
 @url = http://localhost:3001
 
-@id = 66325c4d4da98a79c824ecf5
+@id = 6630e8f5e192154126c832ed
 
 GET {{url}}/api/menu
 
@@ -13,7 +13,7 @@ PUT {{url}}/api/menu/{{id}}
 Content-Type: application/json
 
 {
-    "name": "Loaded Yogurt Parfait",
+    "name": "Ultimate Yogurt Parfait",
     "description": "Greek yogurt, granola, honey, and fresh berries",
     "price": "4.99"
 }
